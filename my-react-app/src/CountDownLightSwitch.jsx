@@ -1,21 +1,22 @@
-import { useState, useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 
 export function CountDownLightSwitch(){
-   
-   
-     return (
-        <div >
-        <div class="header">
-        <h1>Countdown & Light Switch</h1>
-        <div class="toggle-container">
-          <label class="toggle-switch">
-            <input type="checkbox" id="themeToggle" />
-            <span class="slider"></span>
-          </label>
-          <span>Light Mode</span>
-        </div>
-      </div>   
-      
+
+  return (
+    <div class="container">
+    
+    <div class="header">
+      <h1>Countdown & Light Switch</h1>
+      <div class="toggle-container">
+        <label class="toggle-switch">
+          <input type="checkbox" id="themeToggle" />
+          <span class="slider"></span>
+        </label>
+        <span>Light Mode</span>
+      </div>
+    </div>
+
+    
     <div class="timer-section">
       <div class="progress-bar">
         <div class="progress" id="progress"></div>
@@ -27,7 +28,6 @@ export function CountDownLightSwitch(){
       </div>
       <div class="message" id="messageArea"></div>
     </div>
-
-      </div> 
-     );
+  </div>
+  )
 }
